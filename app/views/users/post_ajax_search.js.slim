@@ -1,0 +1,8 @@
+| var result = $('.result');
+
+| result.empty();
+
+- flash.each do |msg_type, msg|
+  | result.append('#{j(content_tag(:div, msg))}');
+
+| result.append('#{j(@search_result_user&.name)}');
